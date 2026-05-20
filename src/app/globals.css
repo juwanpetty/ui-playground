@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+    --color-gray-*: initial;
 }
+
+@import "radix-colors-tailwind";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.dark {
+    --radix-intermediate-gray-1: oklch(var(--radix-rgb-gray-1));
+    --radix-intermediate-gray-2: oklch(var(--radix-rgb-gray-2));
+    --radix-intermediate-gray-3: oklch(var(--radix-rgb-gray-3));
+    --radix-intermediate-gray-4: oklch(var(--radix-rgb-gray-4));
+    --radix-intermediate-gray-5: oklch(var(--radix-rgb-gray-5));
+    --radix-intermediate-gray-6: oklch(var(--radix-rgb-gray-6));
+    --radix-intermediate-gray-7: oklch(var(--radix-rgb-gray-7));
+    --radix-intermediate-gray-8: oklch(var(--radix-rgb-gray-8));
+    --radix-intermediate-gray-9: oklch(var(--radix-rgb-gray-9));
+    --radix-intermediate-gray-10: oklch(var(--radix-rgb-gray-10));
+    --radix-intermediate-gray-11: oklch(var(--radix-rgb-gray-11));
+    --radix-intermediate-gray-12: oklch(var(--radix-rgb-gray-12));
+    --radix-intermediate-gray-a1: oklch(var(--radix-rgb-gray-a1));
+    --radix-intermediate-gray-a2: oklch(var(--radix-rgb-gray-a2));
+    --radix-intermediate-gray-a3: oklch(var(--radix-rgb-gray-a3));
+    --radix-intermediate-gray-a4: oklch(var(--radix-rgb-gray-a4));
+    --radix-intermediate-gray-a5: oklch(var(--radix-rgb-gray-a5));
+    --radix-intermediate-gray-a6: oklch(var(--radix-rgb-gray-a6));
+    --radix-intermediate-gray-a7: oklch(var(--radix-rgb-gray-a7));
+    --radix-intermediate-gray-a8: oklch(var(--radix-rgb-gray-a8));
+    --radix-intermediate-gray-a9: oklch(var(--radix-rgb-gray-a9));
+    --radix-intermediate-gray-a10: oklch(var(--radix-rgb-gray-a10));
+    --radix-intermediate-gray-a11: oklch(var(--radix-rgb-gray-a11));
+    --radix-intermediate-gray-a12: oklch(var(--radix-rgb-gray-a12));
 }
