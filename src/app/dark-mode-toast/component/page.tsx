@@ -3,7 +3,7 @@ import { LucideChevronRight, LucideX } from "lucide-react";
 
 export default function Page() {
   return (
-    <div className="grid place-items-center h-svh w-full">
+    <div className="grid place-items-center h-svh w-full p-4">
       <DarkModeToast />
     </div>
   );
