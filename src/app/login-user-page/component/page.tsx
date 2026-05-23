@@ -103,7 +103,14 @@ function LoginUserPage() {
       </div>
       <div className="flex-1 p-8 hidden lg:block">
         <div className="rounded-2xl overflow-hidden w-full h-full relative">
-          <Image src={image1} fill alt="Image 1" className="object-cover" />
+          <Image
+            src={image1}
+            alt="Image 1"
+            className="object-cover w-full h-full"
+            placeholder="blur"
+            width={4496}
+            height={2948}
+          />
           <div className="pointer-events-none absolute inset-0 rounded-2xl inset-ring-2 inset-ring-black/10 " />
         </div>
       </div>
