@@ -4,7 +4,7 @@ import { useRef, useState, useCallback } from "react";
 
 export function PreviewFrame({
   src,
-  defaultTheme,
+  defaultTheme = "light",
   showThemeToggle = true,
 }: {
   src: string;
